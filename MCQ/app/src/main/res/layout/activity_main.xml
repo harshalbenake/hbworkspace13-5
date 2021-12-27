@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.wefika.horizontalpicker.HorizontalPicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7E57C2"
+        android:background="#E8E7E8"
+        android:textSize="40sp"
+        android:ellipsize="none"
+        android:id="@+id/hp_horizontalpicker"
+        android:marqueeRepeatLimit="-1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:values="@array/values"
+        app:dividerSize="10dp"
+        app:sideItems="1" />
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+<RadioGroup
+    android:id="@+id/rg_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:text="Previous" />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next" />
+    </LinearLayout>
+</LinearLayout>
